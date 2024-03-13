@@ -1,0 +1,399 @@
+.hero-section {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.hero-section .hero-content {
+  width: 460px;
+  height: 415px;
+  margin-top: 81px;
+}
+.hero-section .hero-content .hero-content-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 151px;
+  height: 19px;
+  gap: 10px;
+}
+.hero-section .hero-content .hero-content-icon .plus-icon {
+  width: 19px;
+  height: 19px;
+}
+.hero-section .hero-content .hero-content-icon .health-care {
+  width: 122px;
+  height: 19px;
+}
+.hero-section .hero-content .hero-heading-txt {
+  font-size: 48px;
+  font-weight: 700;
+  width: 422px;
+  color: rgb(51, 51, 51);
+  margin-top: 20px;
+}
+.hero-section .hero-content .hero-para-txt {
+  font-weight: 14px;
+  color: rgb(130, 130, 130);
+  margin-top: 39px;
+  width: 410px;
+}
+.hero-section .hero-content .search-container {
+  width: 507px;
+  margin-top: 30px;
+}
+.hero-section .hero-content .search-container .search-field {
+  width: 507px;
+  height: 50px;
+  border: 1px solid rgb(242, 242, 242);
+  border-radius: 20px;
+  text-indent: 30px;
+}
+.hero-section .hero-content .hero-button {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.hero-section .hero-content .hero-button .hero-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 49px;
+  background-color: #1d884a;
+  border: none;
+  width: 166px;
+  height: 50px;
+  padding: 15px, 20px, 16px, 25px;
+  border-radius: 108px;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  box-shadow: 2px 2px 4px #1d884a;
+  text-decoration: none;
+}
+.hero-section .hero-content .hero-button .hero-btn:hover {
+  transition: background-color 300ms ease-out;
+}
+.hero-section .hero-content .hero-button .hero-btn .hero-btn-span {
+  width: 18px;
+  height: 18px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.hero-section .hero-content .hero-button .hero-btn .hero-btn-span .hero-icon {
+  width: 6px;
+  height: 8px;
+}
+.hero-section .hero-content .hero-button .hero-btn-2 {
+  background-color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(130, 130, 130);
+  cursor: pointer;
+}
+.hero-section .hero-section-image {
+  width: 490px;
+  height: 466px;
+  position: relative;
+}
+.hero-section .hero-section-image .image-container {
+  height: 444px;
+  width: 450px;
+}
+.hero-section .hero-section-image .image-container .hero-image {
+  height: 444px;
+  width: 450px;
+}
+.hero-section .hero-section-image .image-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  width: 191px;
+  height: 191px;
+  bottom: 0;
+  right: 0;
+  left: 330px;
+  z-index: 1;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 8px 1px rgb(242, 242, 242);
+}
+.hero-section .hero-section-image .image-card .image-card-icon {
+  width: 81px;
+  height: 81px;
+}
+.hero-section .hero-section-image .image-card .card-text {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(130, 130, 130);
+}
+.hero-section .hero-section-image .image-card .card-button {
+  width: 145px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(51, 51, 51);
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 820px) {
+  .hero-section .hero-content {
+    width: 330px;
+    height: 350px;
+    margin-top: 30px;
+  }
+  .hero-section .hero-content .hero-content-icon {
+    width: 151px;
+    height: 19px;
+    gap: 10px;
+  }
+  .hero-section .hero-content .hero-content-icon .plus-icon {
+    width: 19px;
+    height: 19px;
+  }
+  .hero-section .hero-content .hero-content-icon .health-care {
+    width: 122px;
+    height: 19px;
+  }
+  .hero-section .hero-content .hero-heading-txt {
+    font-size: 34px;
+    font-weight: 700;
+    width: 320px;
+    margin-top: 20px;
+  }
+  .hero-section .hero-content .hero-para-txt {
+    font-weight: 12px;
+    margin-top: 39px;
+    width: 300px;
+  }
+  .hero-section .hero-content .search-container {
+    width: 320px;
+    margin-top: 30px;
+  }
+  .hero-section .hero-content .search-container .search-field {
+    width: 320px;
+    height: 40px;
+    border-radius: 20px;
+    text-indent: 20px;
+  }
+  .hero-section .hero-content .hero-button {
+    gap: 30px;
+    margin-top: 30px;
+  }
+  .hero-section .hero-content .hero-button .hero-btn {
+    gap: 39px;
+    width: 146px;
+    height: 40px;
+    padding: 10px, 15px, 11px, 20px;
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+  }
+  .hero-section .hero-content .hero-button .hero-btn .hero-btn-span {
+    width: 18px;
+    height: 18px;
+  }
+  .hero-section .hero-content .hero-button .hero-btn .hero-btn-span .hero-icon {
+    width: 6px;
+    height: 8px;
+  }
+  .hero-section .hero-content .hero-button .hero-btn-2 {
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  .hero-section .hero-section-image {
+    width: 330px;
+    height: 330px;
+    position: relative;
+  }
+  .hero-section .hero-section-image .image-container {
+    height: 330px;
+    width: 330px;
+  }
+  .hero-section .hero-section-image .image-container .hero-image {
+    height: 330px;
+    width: 330px;
+  }
+  .hero-section .hero-section-image .image-card {
+    width: 150px;
+    height: 150px;
+    bottom: 0;
+    right: 0;
+    top: 230px;
+    left: 190px;
+  }
+  .hero-section .hero-section-image .image-card .image-card-icon {
+    width: 60px;
+    height: 60px;
+  }
+  .hero-section .hero-section-image .image-card .card-text {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .hero-section .hero-section-image .image-card .card-button {
+    width: 130px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero-section .hero-content {
+    width: 330px;
+    height: 350px;
+    margin-top: 30px;
+  }
+  .hero-section .hero-content .hero-content-icon {
+    width: 151px;
+    height: 19px;
+    gap: 10px;
+  }
+  .hero-section .hero-content .hero-content-icon .plus-icon {
+    width: 19px;
+    height: 19px;
+  }
+  .hero-section .hero-content .hero-content-icon .health-care {
+    width: 122px;
+    height: 19px;
+  }
+  .hero-section .hero-content .hero-heading-txt {
+    font-size: 30px;
+    font-weight: 700;
+    width: 320px;
+    margin-top: 20px;
+  }
+  .hero-section .hero-content .hero-para-txt {
+    font-weight: 12px;
+    margin-top: 39px;
+    width: 300px;
+  }
+  .hero-section .hero-content .search-container {
+    width: 320px;
+    margin-top: 30px;
+  }
+  .hero-section .hero-content .search-container .search-field {
+    width: 320px;
+    height: 40px;
+    border-radius: 20px;
+    text-indent: 20px;
+  }
+  .hero-section .hero-content .hero-button {
+    gap: 30px;
+    margin-top: 30px;
+  }
+  .hero-section .hero-content .hero-button .hero-btn {
+    gap: 39px;
+    width: 146px;
+    height: 40px;
+    padding: 10px, 15px, 11px, 20px;
+    border-radius: 108px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .hero-section .hero-content .hero-button .hero-btn:hover {
+    transition: background-color 300ms ease-out;
+  }
+  .hero-section .hero-content .hero-button .hero-btn .hero-btn-span {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+  }
+  .hero-section .hero-content .hero-button .hero-btn .hero-btn-span .hero-icon {
+    width: 6px;
+    height: 8px;
+  }
+  .hero-section .hero-content .hero-button .hero-btn-2 {
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .hero-section .hero-section-image {
+    margin-top: 1px;
+    width: 300px;
+    height: 330px;
+    position: relative;
+  }
+  .hero-section .hero-section-image .image-container {
+    height: 330px;
+    width: 300px;
+    margin-top: 0px;
+  }
+  .hero-section .hero-section-image .image-container .hero-image {
+    margin-top: 0px;
+    height: 330px;
+    width: 300px;
+  }
+  .hero-section .hero-section-image .image-card {
+    width: 150px;
+    height: 150px;
+    bottom: 0;
+    right: 0;
+    top: 240px;
+    left: 180px;
+  }
+  .hero-section .hero-section-image .image-card .image-card-icon {
+    width: 55px;
+    height: 55px;
+  }
+  .hero-section .hero-section-image .image-card .card-text {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .hero-section .hero-section-image .image-card .card-button {
+    width: 130px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero-section {
+    width: 100%;
+    flex-direction: column;
+  }
+  .hero-section .hero-content {
+    width: 90%;
+    height: 415px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-section .hero-heading-txt {
+    font-size: 32px;
+    text-align: center;
+  }
+  .hero-section .hero-para-txt {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-section .search-container {
+    width: 100%;
+  }
+  .hero-section .search-container .search-field {
+    width: 95%;
+    height: 50px;
+  }
+}
+.hero-section-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 466px;
+  position: relative;
+}
+.hero-section-image .image-container {
+  height: 444px;
+  width: 100%;
+}
+.hero-section-image .image-container .hero-image {
+  height: 444px;
+  width: 100%;
+}/*# sourceMappingURL=HeroSection.module.css.map */

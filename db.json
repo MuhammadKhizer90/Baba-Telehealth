@@ -1,0 +1,52 @@
+ [{ 
+    "id": 1,
+    "name": "Dr Baba Hub",
+    "education": "MBBS",
+    "personPrice": "In person visits: Rs 15000",
+    "videoVisit": "Video visits: Rs 15000" ,
+    "timeTitle": "Under 5 Min",
+    "timeTitle2": "Wait Time",
+    "experienceTitle": "4+ Years",
+    "experienceTitle2": "Experience",
+    "ratingTitle1": "100%" ,
+    "ratingTitle2": "Satishfied Patients"
+   },
+   { 
+    "id":2,
+    "name": "Dr Majid",
+    "education": "MBBS",
+    "personPrice": "In person visits: Rs 10000",
+    "videoVisit": "Video visits: Rs 12000" ,
+    "timeTitle": "Under 5 Min",
+    "timeTitle2": "Wait Time",
+    "experienceTitle": "21+ Years",
+    "experienceTitle2": "Experience",
+    "ratingTitle1": "100%" ,
+    "ratingTitle2": "Satishfied Patients"
+   },
+   { 
+    "id":3,
+    "name": "Dr Ofili",
+    "education": "MBBS",
+    "personPrice": "In person visits: Rs 10000",
+    "videoVisit": "Video visits: Rs 12000" ,
+    "timeTitle": "Under 5 Min",
+    "timeTitle2": "Wait Time",
+    "experienceTitle": "16+ Years",
+    "experienceTitle2": "Experience",
+    "ratingTitle1": "100%" ,
+    "ratingTitle2": "Satishfied Patients"
+   },
+   { 
+    "id":4,
+    "name": "Dr Ali",
+    "education": "MBBS",
+    "personPrice": "In person visits: Rs 10000",
+    "videoVisit": "Video visits: Rs 12000" ,
+    "timeTitle": "Under 5 Min",
+    "timeTitle2": "Wait Time",
+    "experienceTitle": "13+ Years",
+    "experienceTitle2": "Experience",
+    "ratingTitle1": "100%" ,
+    "ratingTitle2": "Satishfied Patients"
+   }]

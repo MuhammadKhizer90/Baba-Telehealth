@@ -1,0 +1,235 @@
+.errorMessage{
+  color: red;
+  font-size: 12px;
+  margin: 2px;
+  padding: 0px;
+}
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(246, 250, 253, 1);
+  .login-container {
+    width: 50%;
+    .login-heading-container {
+      margin: 10px 0px;
+      padding: 10px 0px;
+      .login-heading {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 6px;
+      }
+      .login-link {
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        color: rgba(29, 136, 74, 1);
+      }
+    }
+    .form-container {
+      .label {
+        font-size: 14px;
+        font-weight: 700;
+        margin-top: 10px;
+      }
+      .first-last-name {
+        display: flex;
+        padding: 10px 0px;
+        justify-content: space-between;
+        .first-name-c{
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+        .first-name {
+          height: 45px;
+          width: 99%;
+          text-indent: 10px;
+          border: 1px solid #e1e1e4;
+          margin-bottom: 5px;
+        }
+      }
+      .last-name-c{
+        width: 49.6%;
+        display: flex;
+        flex-direction: column;
+        .first-name {
+          height: 45px;
+          width: 99%;
+          text-indent: 10px;
+          border: 1px solid #e1e1e4;
+          margin-bottom: 5px;
+        }
+      }
+      }
+      .input-fields {
+        
+        .email-field {
+         margin: 12px 0px;
+          height: 40px;
+          width: 99%;
+          border: 1px solid #e1e1e4;
+        }
+      }
+      .date-of-birth-container {
+        .date-of-birth {
+          padding: 12px 0px;
+          display: flex;
+          .month-c{
+            width: 100%;
+          .month {
+            height: 40px;
+            border: 1px solid #e1e1e4;
+            width: 100%;
+            margin-bottom: 5px ;
+          }
+        }
+        }
+      }
+      .gender {
+      
+        .gender-picker {
+          display: flex;
+          .gender-btns {
+            margin: 10px 0px;
+            gap: 5px;
+            height: 40px;
+            border: 1px solid#e1e1e4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            background-color: white;
+            .gender-title {
+              font-size: 14px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+      .terms-of-use {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        gap: 10px;
+        padding: 10px 0px;
+        .agree-btn {
+          border: 1px solid rgba(29, 136, 74, 1);
+          color: rgba(29, 136, 74, 1);
+          margin-bottom: 3px;
+          &:checked {
+            color: rgba(29, 136, 74, 1);
+          }
+        }
+        .acceptance-text {
+          font-size: 14px;
+          .acceptance-spn {
+            color: rgba(29, 136, 74, 1);
+            text-decoration: none;
+            font-weight: bold;
+          }
+        }
+      }
+      .button-container {
+       margin: 10px 0px;
+        .submit-btn {
+          width: 100%;
+          background-color: rgba(29, 136, 74, 1);
+          font-size: 16px;
+          color: white;
+          font-weight: 600;
+          border: none;
+          height: 50px;
+          margin: 10px 0px;
+        }
+        .doctor-link{
+            text-decoration: none;
+            color: rgba(29, 136, 74, 1);
+            font-weight: bold;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:1024px) {
+  .login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(246, 250, 253, 1);
+    height: 72vh;
+    .login-container {
+      width: 70%;
+    }
+}
+}
+@media screen and (max-width:820px) {
+  .login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(246, 250, 253, 1);
+    .login-container {
+      width: 70%;
+    }
+}
+
+
+}
+@media screen and (max-width:768px) {
+  .login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(246, 250, 253, 1);
+    .login-container {
+      width: 60%;
+    }
+}
+}
+@media screen and (max-width:600px){
+  .login-section {
+    width: 100%;
+    height: 1000px;
+    .login-container {
+      width: 90%;
+      .form-container {
+        .first-last-name {
+          display: flex;
+          flex-direction: column;
+       
+          .first-name {
+            width: 100%;
+            margin-top: 5px;
+          }
+        }
+        .input-fields {
+          .email-field {
+            height: 40px;
+            width: 99%;
+          }
+        }
+        .date-of-birth-container {
+          .date-of-birth {
+     
+            display: flex;
+            flex-direction: column;
+            .month {
+              width: 100%;
+              margin-top: 5px;
+            }
+          }
+        }
+        .gender {
+          .gender-picker {
+            display: flex;
+          }
+        }
+        .button-container {
+          .submit-btn {
+            width: 100%;
+          }
+      }
+    }
+  }
+}
+}

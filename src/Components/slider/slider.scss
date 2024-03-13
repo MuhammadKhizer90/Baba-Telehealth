@@ -1,0 +1,263 @@
+.slider-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .heading-section-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    .main-heading-slider {
+      font-size: 36px;
+      margin: 0px;
+      font-weight: 700;
+      color: rgba(51, 51, 51, 1);
+      margin: 0;
+    }
+    .main-para-text {
+      font-size: 14px;
+      text-align: center;
+      font-weight: 400;
+      color: rgba(130, 130, 130, 1);
+      width: 648px;
+      margin-top: 10px;
+    }
+    .main-para-text2 {
+      font-size: 14px;
+      text-align: center;
+      font-weight: 400;
+      color: rgba(130, 130, 130, 1);
+      width: 648px;
+      margin: 0px;
+    }
+  }
+
+  .slider-action-btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    width: 76%;
+    .slide-btn {
+      border: none;
+      border-radius: 50%;
+      background-color: white;
+      color: black;
+      width: 24px;
+      height: 24px;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 0.6666666865348816px 1.2986111640930176px 0px rgba(0, 0, 0, 0.01),
+      0px 2.933333396911621px 2.6888887882232666px 0px rgba(0, 0, 0, 0.01),
+      0px 7.199999809265137px 5.362500190734863px 0px rgba(0, 0, 0, 0.01),
+      0px 13.866666793823242px 10.51111125946045px 0px rgba(0, 0, 0, 0.02),
+      0px 23.33333396911621px 19.32638931274414px 0px rgba(0, 0, 0, 0.02),
+      0px 1.3851852416992188px 3.0962963104248047px 0px rgba(0, 0, 0, 0.06),
+      0px 36px 33px 0px rgba(0, 0, 0, 0.03);
+      cursor: pointer;
+      // &.selected {
+      //   color: black;
+      //   border: 1px solid black;
+      // }
+    }
+    .slide-btn2 {
+      border: none;
+      border-radius: 50%;
+      background-color: white;
+      color: black;
+      width: 24px;
+      height: 24px;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      box-shadow: 0px 0.6666666865348816px 1.2986111640930176px 0px rgba(0, 0, 0, 0.01),
+      0px 2.933333396911621px 2.6888887882232666px 0px rgba(0, 0, 0, 0.01),
+      0px 7.199999809265137px 5.362500190734863px 0px rgba(0, 0, 0, 0.01),
+      0px 13.866666793823242px 10.51111125946045px 0px rgba(0, 0, 0, 0.02),
+      0px 23.33333396911621px 19.32638931274414px 0px rgba(0, 0, 0, 0.02),
+      0px 1.3851852416992188px 3.0962963104248047px 0px rgba(0, 0, 0, 0.06),
+      0px 36px 33px 0px rgba(0, 0, 0, 0.03);
+
+      // box-shadow: 0 0.666px 5.5362px rgba(0, 0, 0, 1.01);
+      // &.selected {
+      //   color: black;
+      //   border: black;
+      // }
+    }
+  }
+  .Slider-cards {
+    width: 94%;
+    height: 290px;
+    overflow: hidden;
+    margin-top: 20px;
+    padding-left: 15px;
+    .slick-slide {
+      border:1px solid rgba(242, 242, 242, 1);
+      overflow: visible;
+      margin: 5px 10px;
+      height: 229px;
+      padding-left: 5px;
+      margin-left: 10px;
+      display: flex;
+      width: 188px;
+      cursor: pointer;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 
+      0px 1.3851852416992188px 3.0962963104248047px 0px rgba(0, 0, 0, 0.06);
+      .slider-card-sm {
+        padding-left: 5px;
+        .slide-title {
+          margin-top: 30px;
+          color: rgba(29, 136, 74, 1);
+          margin-left: 20px;
+        }
+        .slide-img{
+          width: 56px;
+          height: 56px;
+          margin-top: 30px;
+          margin-left: 20px;
+        }
+        .slide-text {
+          font-size: 12px;
+          width: 150px;
+          margin-top: 30px;
+          color:rgba(130, 130, 130, 1);
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  .medical-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 49px;
+    background-color: white;
+    border: none;
+    width: 250px;
+    height: 50px;
+    padding: 15px, 20px, 16px, 25px;
+    border-radius: 108px;
+    font-size: 16px;
+    color: rgba(29, 136, 74, 1);
+    font-weight: 600;
+    cursor: pointer;
+    &:hover {
+      transition: background-color 300ms ease-out;
+    }
+    .medical-btn-span {
+      width: 18px;
+      height: 18px;
+      background-color: rgba(29, 136, 74, 0.2);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      .medical-icon {
+        width: 6px;
+        height: 8px;
+      }
+    }
+  }
+}
+@media screen and (max-width:820px) {
+  .slider-section {
+    .heading-section-slider {
+      .main-heading-slider {
+        font-size: 34px;
+      }
+    }
+  
+    .slider-action-btns {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 10px;
+      gap: 15px;
+      width: 76%;
+      .slide-btn {
+        width: 25px;
+        height: 25px;
+        font-size: 20px;
+      }
+      .slide-btn2 {
+        width: 25px;
+        height: 25px;
+        font-size: 20px;
+      }
+    }
+    .Slider-cards {
+      width: 90%;
+      height: 246px;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+    .medical-button {
+      margin-top: 20px;
+      gap: 39px;
+      width: 230px;
+      height: 40px;
+      font-size: 15px;
+    }
+  } 
+}
+@media screen and (max-width:600px) {
+  .slider-section {
+    width: 100%;
+    .heading-section-slider {
+      width: 100%;
+      .main-heading-slider {
+        font-size: 30px;
+      }
+      .main-para-text {
+        width: 90%;
+      }
+      .main-para-text2 {
+        font-size: 14px;
+        width:90%;
+      }
+    }
+  
+    .slider-action-btns {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 10px;
+      gap: 15px;
+      width: 76%;
+      .slide-btn {
+        width: 25px;
+        height: 25px;
+        font-size: 20px;
+      }
+      .slide-btn2 {
+        width: 25px;
+        height: 25px;
+        font-size: 20px;
+      }
+    }
+    .Slider-cards {
+      width: 90%;
+      height: 276px;
+      overflow: hidden;
+      margin-top: 20px;
+      .slick-slide {
+        height: 229px;
+        width: 188px;
+        .slider-card-sm {
+          padding-left: 5px;
+        }
+      }
+    }
+    .medical-button {
+      margin-top: 0px;
+    }
+  } 
+}

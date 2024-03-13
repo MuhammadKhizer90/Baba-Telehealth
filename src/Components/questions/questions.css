@@ -1,0 +1,48 @@
+.question-txt-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.question-txt-btn .question-text {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 0px;
+}
+.question-txt-btn .icon-button {
+  background-color: white;
+  border: none;
+  width: 31px;
+  height: 31px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.question-txt-btn .icon-button .minus {
+  color: #F76D00;
+}
+
+.dropdown .dropdown-text {
+  color: #828282;
+  font-size: 12px;
+}
+.dropdown .dropdown-text2 {
+  margin-top: 15px;
+  color: #828282;
+  font-size: 12px;
+}
+
+.dropdown-line {
+  width: 480px;
+  margin-top: 17px;
+  margin-bottom: 22px;
+  color: #E0E0E0;
+}
+
+@media screen and (max-width: 1024px) {
+  .dropdown-line {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .dropdown-line {
+    width: 100%;
+  }
+}/*# sourceMappingURL=questions.css.map */

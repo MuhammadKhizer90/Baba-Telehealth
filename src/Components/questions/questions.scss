@@ -1,0 +1,51 @@
+
+    .question-txt-btn{
+        display: flex;
+        justify-content: space-between;
+        
+    .question-text{
+        font-size: 18px;
+        font-weight:700;
+        margin-top: 0px;
+    }
+    .icon-button{
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        color: white;
+        border: none;
+        width:31px;
+        height: 31px;
+        font-size:20px;
+        font-weight: 700;
+        background-color: #1d884a;
+        cursor: pointer;
+    .minus{
+        color:white;
+    }
+        
+    }
+}
+.dropdown{
+    .dropdown-text{
+        color:black;
+        font-size:16px;
+        font-weight: 400;
+    }
+}
+.dropdown-line{
+    width: 96%;
+    margin-top: 17px;
+    margin-bottom: 22px;
+    color: grey;
+}
+// @media screen and (max-width:map-get($breakpoints,lg)) {
+//     .dropdown-line{
+//         width: 450px;
+//     }
+// }
+// @media screen and (max-width:map-get($breakpoints,sm)) {
+//     .dropdown-line{
+//         width: 100%;
+//     }
+// }

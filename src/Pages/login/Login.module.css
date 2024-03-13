@@ -1,0 +1,100 @@
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(246, 250, 253);
+}
+.login-section .login-container {
+  width: 50%;
+}
+.login-section .login-container .login-heading-container .login-heading {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+.login-section .login-container .login-heading-container .login-link {
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(29, 136, 74);
+}
+.login-section .login-container .form-container .label {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.login-section .login-container .form-container .first-last-name {
+  display: flex;
+}
+.login-section .login-container .form-container .first-last-name .first-name {
+  height: 45px;
+  width: 49%;
+  text-indent: 10px;
+  border: 1px solid #e1e1e4;
+}
+.login-section .login-container .form-container .input-fields .email-field {
+  height: 40px;
+  width: 99%;
+  border: 1px solid #e1e1e4;
+}
+.login-section .login-container .form-container .date-of-birth-container .date-of-birth {
+  display: flex;
+}
+.login-section .login-container .form-container .date-of-birth-container .date-of-birth .month {
+  height: 40px;
+  border: 1px solid #e1e1e4;
+  width: 33%;
+}
+.login-section .login-container .form-container .gender .gender-picker {
+  display: flex;
+}
+.login-section .login-container .form-container .gender .gender-picker .gender-btns {
+  gap: 5px;
+  height: 40px;
+  border: 1px solid #e1e1e4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background-color: white;
+}
+.login-section .login-container .form-container .gender .gender-picker .gender-btns .gender-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+.login-section .login-container .form-container .terms-of-use {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  gap: 10px;
+}
+.login-section .login-container .form-container .terms-of-use .agree-btn {
+  border: 1px solid rgb(29, 136, 74);
+  color: rgb(29, 136, 74);
+  margin-bottom: 3px;
+}
+.login-section .login-container .form-container .terms-of-use .agree-btn:checked {
+  color: rgb(29, 136, 74);
+}
+.login-section .login-container .form-container .terms-of-use .acceptance-text {
+  font-size: 14px;
+}
+.login-section .login-container .form-container .terms-of-use .acceptance-text .acceptance-spn {
+  color: rgb(29, 136, 74);
+  text-decoration: none;
+  font-weight: bold;
+}
+.login-section .login-container .form-container .button-container .submit-btn {
+  width: 100%;
+  background-color: rgb(29, 136, 74);
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  border: none;
+  height: 50px;
+}
+.login-section .login-container .form-container .button-container .doctor-link {
+  text-decoration: none;
+  color: rgb(29, 136, 74);
+  font-weight: bold;
+}/*# sourceMappingURL=Login.module.css.map */

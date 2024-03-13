@@ -1,0 +1,90 @@
+.health-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+    .health-main-container{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        .health-content{
+            width: 50%;
+            padding: 5px;
+            .health-heading{
+                .health-title-text{
+                  font-size: 36px;
+                  font-weight: 700;
+                  color: #000000;
+                  margin: 0px;
+                  text-decoration: underline;
+                  text-decoration-color: #1d884a;
+                  text-decoration-thickness: 5px;
+                  text-underline-offset: 8px;
+                }
+            }
+            .health-para-text{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 21px;
+                text-align: justify;
+
+            }
+            .terms-of-use {
+                display: flex;
+                justify-content: center;
+                height: 40px;
+                gap: 10px;
+                color: #727272;
+                text-align: justify;
+                line-height: 21px;
+                margin-bottom: 50px;
+                .agree-btn {
+                  border-color: 1px solid rgba(29, 136, 74, 1);
+                  color: rgba(29, 136, 74, 1);
+                  accent-color: rgba(29, 136, 74, 1);
+                  background-color: #1d884a;
+                  width: 40px;
+                  height: 40px;
+                  &:focus {
+                    color: rgba(29, 136, 74, 1);
+                    background-color: #1d884a;
+                  }
+                }
+                .acceptance-text {
+                  font-size: 14px;
+                  .acceptance-spn {
+                    color: rgba(29, 136, 74, 1);
+                    text-decoration: none;
+                    font-weight: bold;
+                  }
+                }
+              }
+              .btn-container{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 20px;
+                .booking-button{
+                    background-color: #1d884a;
+                    border: none;
+                    padding: 10px 25px;
+                    border-radius: 10px;
+                    font-size: 16px;
+                    text-decoration: none;
+                    color: white;
+                    font-weight: 600;
+                    margin-top: 60px;
+                }
+              }
+
+        }
+        .health-image{
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-bottom: 70px;
+        }
+    }
+}

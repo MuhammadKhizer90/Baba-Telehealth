@@ -1,0 +1,24 @@
+.contact-us-section {
+  display: flex;
+  justify-content: center;
+}
+.contact-us-section .contacct-us-container {
+  width: 50%;
+  border: 1px solid blue;
+  margin: 0;
+}
+.contact-us-section .contacct-us-container .Heading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-us-section .contacct-us-container .Heading-container .heading-text {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0px;
+}
+.contact-us-section .contacct-us-container .Heading-container .paragraph-text {
+  font-size: 14px;
+  text-align: center;
+}/*# sourceMappingURL=Contact.module.css.map */

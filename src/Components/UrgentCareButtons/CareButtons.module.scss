@@ -1,0 +1,73 @@
+.urgent-care-2{
+    margin-top: 100px;
+    .urgent-care-2-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .urgent-care-2-heading{
+        font-size: 36px;
+        font-weight: 700;
+        color: rgba(51, 51, 51, 1);
+        margin: 0px;
+    }
+    .urgent-care-2-para{
+        width: 648px;
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(130, 130, 130, 1);
+        text-align: center;
+    }
+}
+}
+.urgent-care-2-buttons{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    .buttons-div-1{
+    }
+    .buttons-div-2{
+    }
+    .buttons-div-3{
+
+    }
+}
+@media screen and (max-width:600px) {
+    .urgent-care-2{
+        margin-top: 100px;
+        width: 100%;
+        .urgent-care-2-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .urgent-care-2-heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+        }
+        .urgent-care-2-para{
+            width: 90%;
+        }
+    }
+    }
+    .urgent-care-2-buttons{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 100px;
+        .buttons-div-1{
+        }
+        .buttons-div-2{
+        }
+        .buttons-div-3{
+    
+        }
+    }
+    
+}

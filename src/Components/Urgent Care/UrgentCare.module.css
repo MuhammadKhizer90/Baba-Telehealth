@@ -1,0 +1,146 @@
+.urgent-care-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+}
+.urgent-care-section .main-container {
+  position: relative;
+  width: 80%;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: linear-gradient(to bottom right, rgb(29, 136, 74), rgb(159, 214, 182));
+}
+.urgent-care-section .main-container .main-container-image {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+}
+.urgent-care-section .main-container .main-container-image .main-container-svg {
+  width: 106px;
+  height: 106px;
+}
+.urgent-care-section .main-container .urgent-care-content {
+  margin-top: 40px;
+  margin-left: 53px;
+  width: 60%;
+}
+.urgent-care-section .main-container .urgent-care-content .urgent-care-txt {
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+  margin: 0px;
+}
+.urgent-care-section .main-container .urgent-care-content .urgent-care-para {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  width: 548px;
+}
+.urgent-care-section .main-container .urgent-care-content .urgent-care-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 49px;
+  background-color: white;
+  border: none;
+  width: 255px;
+  height: 50px;
+  padding: 15px, 20px, 16px, 25px;
+  border-radius: 108px;
+  font-size: 16px;
+  color: rgb(29, 136, 74);
+  font-weight: 600;
+  box-shadow: 2px 2px 4px #1d884a;
+}
+.urgent-care-section .main-container .urgent-care-content .urgent-care-btn:hover {
+  transition: background-color 300ms ease-out;
+}
+.urgent-care-section .main-container .urgent-care-content .urgent-care-btn .urgent-care-btn-span {
+  width: 18px;
+  height: 18px;
+  background-color: rgba(29, 136, 74, 0.2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.urgent-care-section .main-container .urgent-care-content .urgent-care-btn .urgent-care-btn-span .urgent-care-icon {
+  width: 6px;
+  height: 8px;
+}
+
+@media screen and (max-width: 820px) {
+  .urgent-care-section .main-container {
+    width: 80%;
+    height: 20vh;
+  }
+  .urgent-care-section .main-container .main-container-image {
+    right: 30px;
+    bottom: 20px;
+  }
+  .urgent-care-section .main-container .main-container-image .main-container-svg {
+    width: 106px;
+    height: 106px;
+  }
+  .urgent-care-section .main-container .urgent-care-content .urgent-care-txt {
+    font-size: 34px;
+  }
+  .urgent-care-section .main-container .urgent-care-content .urgent-care-para {
+    width: 448px;
+  }
+  .urgent-care-section .main-container .urgent-care-content .urgent-care-btn {
+    gap: 39px;
+    width: 230px;
+    height: 40px;
+    padding: 15px, 20px, 16px, 25px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 768px) {
+  .urgent-care-section .main-container {
+    width: 80%;
+    height: 25vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .urgent-care-section {
+    width: 100%;
+  }
+  .urgent-care-section .main-container {
+    width: 90%;
+    height: 40vh;
+  }
+  .urgent-care-section .main-container .main-container-image {
+    right: 10px;
+    bottom: 5px;
+  }
+  .urgent-care-section .main-container .main-container-image .main-container-svg {
+    width: 106px;
+    height: 106px;
+  }
+  .urgent-care-section .main-container .urgent-care-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 0px;
+    width: 100%;
+  }
+  .urgent-care-section .main-container .urgent-care-content .urgent-care-txt {
+    font-size: 30px;
+    text-align: center;
+  }
+  .urgent-care-section .main-container .urgent-care-content .urgent-care-para {
+    width: 95%;
+    text-align: center;
+  }
+  .urgent-care-section .main-container .urgent-care-content .urgent-care-btn {
+    align-self: center;
+  }
+}/*# sourceMappingURL=UrgentCare.module.css.map */

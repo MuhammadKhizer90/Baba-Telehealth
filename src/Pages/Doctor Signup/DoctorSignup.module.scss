@@ -1,0 +1,170 @@
+.errorMessage{
+  color: red;
+  font-size: 12px;
+}
+.doctor-form-section{
+  display: flex;
+  justify-content: center;
+ .doctor-main-container{
+  width: 40%;
+  .doctor-from-buttons{
+    width: 100%;
+    .isProfessional{
+      margin-left: 5px;
+      height: 50px;
+      padding: 5px;
+      font-size: 16px;
+      font-weight: 700;
+      width: 48%;
+      border: 1px solid #1d884a;
+      border-radius: 5px;
+      background-color: white;
+      &:active{
+        background-color: #1d884a;
+        color: white;
+      }
+      &:hover{
+        background-color: #1d884a;
+        color: white;
+      }
+    }
+    .heading-container{
+      display: flex;
+      justify-content: center;
+      .form-title-text{
+        font-size: 22px;
+        font-weight: 700;
+      }
+    }
+
+  }
+  .doctor-form-container{
+    margin: 10px 0px;
+    .register-link{
+      text-decoration: none;
+      color: #1d884a;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .form-containerr{
+      display: flex;
+      flex-direction: column;
+      .personel-info{
+        font-size: 16px;
+        font-weight: 700;
+        margin: 5px 0px;
+        color: grey;
+      }
+      .dr-form-input-fields{
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        margin:15px 0px;
+        
+      }
+      .select-option-container{
+        display: flex;
+        gap: 10px;
+      }
+      .dr-form-textarea-field{
+        width: 100%;
+        height: 100px;
+        margin: 15px 0px;
+      }
+
+        .education-title{
+          font-size: 16px;
+          font-weight: 700;
+          color: grey;
+        }
+        .label-heading{
+          font-size: 14px;
+          font-weight: 700;
+          margin-top: 10px;
+          margin-bottom: 14px;
+        }
+      .submit-btn{
+        height: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        background-color: #1d884a;
+        border: none;
+        margin: 10px 0px;
+        border-radius: 5px;
+      }
+    }
+  }
+ }
+}
+@media screen and (max-width:1024px) {
+  .doctor-form-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+   .doctor-main-container{
+    width: 50%;
+  }
+}
+}
+@media screen and (max-width:820px) {
+  .doctor-form-section{
+    display: flex;
+    justify-content: center;
+   .doctor-main-container{
+    width: 63%;
+  }
+}
+}
+@media screen and (max-width:768px) {
+  .doctor-form-section{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+   .doctor-main-container{
+    width: 77%;
+  }
+}
+}
+@media screen and (max-width:600px) {
+  .doctor-form-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+
+    padding: 10px;
+   .doctor-main-container{
+    width: 100%;
+
+    .doctor-from-buttons{
+      width: 100%;
+  
+    }
+    .doctor-form-container{
+      .form-containerr{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+      
+        .select-option-container{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+        }
+      
+  
+        
+        .submit-btn{
+          width: 100%;
+        }
+      }
+    }
+   }
+  }
+  
+}

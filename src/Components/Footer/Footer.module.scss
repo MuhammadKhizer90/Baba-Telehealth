@@ -1,0 +1,87 @@
+.footer-section {
+    width: 100%;
+    background-color: rgba(29, 136, 74, 1);
+    height: 286px;
+  .footer-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .footer-1-logo {
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 46px;
+        .footer-1-logo{
+          width: 208px;
+            margin: 0px;
+            color: white;
+        }
+    }
+    .footer-1-links {
+      width: 95%;
+        gap: 20px;
+        width: 455px;
+        margin-top: 29px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .trade-mark-title{
+          font-size: 14px;
+          color: white;
+          width: 100%;
+          margin: 0px;
+          cursor: pointer;
+        }
+      .footer-1-links-btn {
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 14px;
+        font-weight: 400;
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+    .border-div{
+        border-top: 1px solid white;
+        margin-top: 48px;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .footer-2-text{
+            color: white;
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 30px;
+        }
+        .media-btns-div{
+            gap: 16px;
+            width: 200px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 20px;
+            .media-btn{
+                background-color: rgba(29, 136, 74, 1);
+                border: none;
+                border-radius: 50%;
+                width: 24px;
+                height: 24px;
+                
+                cursor: pointer;
+                .media-icons{
+                    color: white;
+                }
+                .media-icons-fb{
+                  color: white;
+                  font-size: 22px;
+                }
+            }
+        }
+    }
+  }
+}

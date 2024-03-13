@@ -1,0 +1,206 @@
+.main-cards-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+.main-cards-container .doctor-card-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  height: 220px;
+  padding: 10px;
+  margin: 10px;
+}
+.main-cards-container .doctor-card-1 .doctor-profile {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: rgb(246, 250, 253);
+  margin-right: 5px;
+}
+.main-cards-container .doctor-card-1 .doctor-details {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 65%;
+}
+.main-cards-container .doctor-card-1 .doctor-details .doctor-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0px;
+  color: rgb(51, 51, 51);
+}
+.main-cards-container .doctor-card-1 .doctor-details .education {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+}
+.main-cards-container .doctor-card-1 .doctor-details .visit-price-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.main-cards-container .doctor-card-1 .doctor-details .visit-price-buttons .in-person-visit {
+  display: flex;
+  align-items: center;
+  background-color: rgb(246, 250, 253);
+  border-radius: 108px;
+  padding: 0px 20px;
+  gap: 8px;
+}
+.main-cards-container .doctor-card-1 .doctor-details .visit-price-buttons .in-person-visit .visit-btn-icon {
+  font-size: 30px;
+}
+.main-cards-container .doctor-card-1 .doctor-details .visit-price-buttons .in-person-visit .visit-btn-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(51, 51, 51);
+}
+.main-cards-container .doctor-card-1 .doctor-details .visit-price-buttons .in-video-visit {
+  display: flex;
+  align-items: center;
+  background-color: rgb(246, 250, 253);
+  border-radius: 108px;
+  padding: 0px 10px;
+  gap: 8px;
+}
+.main-cards-container .doctor-card-1 .doctor-details .visit-price-buttons .in-video-visit .visit-btn-icon {
+  font-size: 30px;
+}
+.main-cards-container .doctor-card-1 .doctor-details .visit-price-buttons .in-video-visit .visit-btn-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(51, 51, 51);
+}
+.main-cards-container .doctor-card-1 .doctor-details .offers {
+  display: flex;
+  height: 80px;
+  gap: 5px;
+}
+.main-cards-container .doctor-card-1 .doctor-details .offers .time {
+  display: flex;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  width: 220px;
+  height: 60px;
+  gap: 15px;
+  padding: 5px 0px;
+  margin: 10px 0px;
+}
+.main-cards-container .doctor-card-1 .doctor-details .offers .time .clock-icon {
+  margin-top: 9px;
+  margin-left: 25px;
+  font-size: 25px;
+  color: rgba(29, 136, 74, 0.9);
+}
+.main-cards-container .doctor-card-1 .doctor-details .offers .time .time-title {
+  gap: 10px;
+}
+.main-cards-container .doctor-card-1 .doctor-details .offers .time .time-title .time-div-heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(51, 51, 51);
+  margin: 0px;
+}
+.main-cards-container .doctor-card-1 .doctor-details .offers .time .time-title .time-div-text {
+  color: rgb(51, 51, 51);
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.main-cards-container .doctor-card-1 .doctor-details .offers .experience {
+  display: flex;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  width: 220px;
+  height: 60px;
+  gap: 15px;
+  padding: 5px 0px;
+  margin: 10px 0px;
+}
+.main-cards-container .doctor-card-1 .doctor-details .offers .experience .bulb-icon {
+  margin-left: 25px;
+  margin-top: 9px;
+  font-size: 30px;
+  color: rgba(29, 136, 74, 0.9);
+}
+.main-cards-container .doctor-card-1 .doctor-details .offers .experience .experience-title {
+  gap: 10px;
+}
+.main-cards-container .doctor-card-1 .doctor-details .offers .experience .experience-title .experience-div-heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(51, 51, 51);
+  margin: 0px;
+}
+.main-cards-container .doctor-card-1 .doctor-details .offers .experience .experience-title .experience-div-text {
+  color: rgb(51, 51, 51);
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.main-cards-container .doctor-card-1 .doctor-details .offers .rating {
+  display: flex;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  width: 220px;
+  height: 60px;
+  gap: 15px;
+  padding: 5px 0px;
+  margin: 10px 0px;
+}
+.main-cards-container .doctor-card-1 .doctor-details .offers .rating .tick-icon {
+  color: rgba(29, 136, 74, 0.9);
+  margin-left: 25px;
+  margin-top: 9px;
+  font-size: 30px;
+}
+.main-cards-container .doctor-card-1 .doctor-details .offers .rating .rating-title {
+  gap: 10px;
+}
+.main-cards-container .doctor-card-1 .doctor-details .offers .rating .rating-title .rating-div-heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(51, 51, 51);
+  margin: 0px;
+}
+.main-cards-container .doctor-card-1 .doctor-details .offers .rating .rating-title .rating-div-text {
+  color: rgb(51, 51, 51);
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.main-cards-container .doctor-card-1 .dr-card-buttons {
+  width: 30%;
+  height: 200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-cards-container .doctor-card-1 .dr-card-buttons .dr-card-btn-1 {
+  width: 150px;
+  height: 40px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 1.5px solid rgb(51, 51, 51);
+  background-color: white;
+  color: rgb(51, 51, 51);
+}
+.main-cards-container .doctor-card-1 .dr-card-buttons .dr-card-btn-2 {
+  width: 150px;
+  height: 40px;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 1.5px solid rgb(29, 136, 74);
+  background-color: rgb(29, 136, 74);
+  margin-bottom: 20px;
+}/*# sourceMappingURL=DoctorCards.module.css.map */

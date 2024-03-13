@@ -1,0 +1,95 @@
+.errorMessage{
+  color: red;
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
+}
+.signup-section {
+  display: flex;
+  justify-content: center;
+  .signup-container {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .signup-heading {
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+    }
+    .form-section {
+      .fields-container {
+        //   margin-top: 20px;
+        .label {
+          font-size: 14px;
+          font-weight: bold;
+        }
+        .email {
+          width: 99%;
+          height: 45px;
+          text-indent: 8px;
+          border: 1px solid#e1e1e4;
+          margin: 10px 0px;
+        }
+      }
+      .button-container {
+        display: flex;
+        flex-direction: column;
+        .submit-btn {
+          width: 100%;
+          background-color: rgba(29, 136, 74, 1);
+          font-size: 16px;
+          color: white;
+          font-weight: 600;
+          border: none;
+          height: 50px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+        .doctor-link {
+          text-decoration: none;
+          color: rgba(29, 136, 74, 1);
+          font-weight: bold;
+        }
+        .forget-password {
+          text-decoration: none;
+          color: rgba(29, 136, 74, 1);
+          font-weight: bold;
+          font-size: 14px;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .signup-section {
+    display: flex;
+    justify-content: center;
+    height: 63vh;
+    .signup-container {
+      width: 60%;
+    }
+  }
+}
+@media screen and (max-width: 820px) {
+    .signup-section {
+      display: flex;
+      justify-content: center;
+      height: 66vh;
+      .signup-container {
+        width: 60%;
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .signup-section {
+      display: flex;
+      justify-content: center;
+      height: 72.2vh;
+      .signup-container {
+        width: 60%;
+      }
+    }
+  }

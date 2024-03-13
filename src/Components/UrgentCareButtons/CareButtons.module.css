@@ -1,0 +1,59 @@
+.urgent-care-2 {
+  margin-top: 100px;
+}
+.urgent-care-2 .urgent-care-2-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.urgent-care-2 .urgent-care-2-content .urgent-care-2-heading {
+  font-size: 36px;
+  font-weight: 700;
+  color: rgb(51, 51, 51);
+  margin: 0px;
+}
+.urgent-care-2 .urgent-care-2-content .urgent-care-2-para {
+  width: 648px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(130, 130, 130);
+  text-align: center;
+}
+
+.urgent-care-2-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 600px) {
+  .urgent-care-2 {
+    margin-top: 100px;
+    width: 100%;
+  }
+  .urgent-care-2 .urgent-care-2-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .urgent-care-2 .urgent-care-2-content .urgent-care-2-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+  }
+  .urgent-care-2 .urgent-care-2-content .urgent-care-2-para {
+    width: 90%;
+  }
+  .urgent-care-2-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+}/*# sourceMappingURL=CareButtons.module.css.map */

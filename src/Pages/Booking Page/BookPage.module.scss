@@ -1,0 +1,959 @@
+.booking-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  flex-direction: column;
+  width: 100%;
+  .first-main-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    .content-side-container {
+      width: 70%;
+
+      .dr-details {
+        .about-dr-details {
+          gap: 20px;
+          display: flex;
+          align-items: center;
+          margin-bottom: 40px;
+          .dr-profile {
+            display: flex;
+            width: 150px;
+
+            .profile {
+              width: 150px;
+              height: 150px;
+              border-radius: 50%;
+            }
+          }
+
+          .about-dr {
+            .name-title {
+              font-size: 32px;
+              font-weight: 700;
+              margin-top: 0px;
+              margin-bottom: 10px;
+            }
+
+            .type-title {
+              font-size: 16px;
+              font-weight: 600;
+              margin: 0px;
+            }
+            .visit-price-buttons {
+              margin-top: 10px;
+              display: flex;
+              align-items: center;
+              gap: 20px;
+              .in-person-visit {
+                display: flex;
+                align-items: center;
+                background-color: #f3f3f4;
+                border-radius: 108px;
+                padding: 0px 20px;
+                gap: 8px;
+                .visit-btn-icon {
+                  width: 30px;
+                  height: 30px;
+                }
+                .visit-btn-text {
+                  font-size: 14px;
+                  font-weight: 600;
+                  color: rgba(51, 51, 51, 1);
+                }
+              }
+              .in-video-visit {
+                display: flex;
+                align-items: center;
+                background-color: #f3f3f4;
+                border-radius: 108px;
+                padding: 0px 10px;
+                gap: 8px;
+                .visit-btn-icon {
+                  width: 30px;
+                  height: 30px;
+                }
+                .visit-btn-text {
+                  font-size: 14px;
+                  font-weight: 600;
+                  color: rgba(51, 51, 51, 1);
+                }
+              }
+            }
+            .bottom-line {
+              width: 90%;
+            }
+          }
+        }
+      }
+      .profile-second-container {
+        .profile-second {
+          display: flex;
+          width: 100%;
+
+          .profile-second-recomended {
+            width: 390px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .recomended-text {
+              font-size: 18px;
+              font-weight: 600;
+              margin: 0px;
+            }
+            .text-2 {
+              font-size: 14px;
+              color: #1d884a;
+              margin: 0px;
+            }
+          }
+        }
+        .profile-second-recomended {
+          width: 390px;
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          width: 500px;
+          .recomended-text {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0px;
+          }
+          .text-2 {
+            padding: 6px 0px;
+            font-size: 14px;
+            color: #1d884a;
+            margin: 0px;
+          }
+        }
+      }
+      .rating-section {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        .rating-main-container {
+          width: 93%;
+          display: flex;
+          .star-side {
+            width: 30%;
+            border-right: solid #878791 1px;
+            margin-right: 30px;
+            .rating-title {
+              font-size: 16px;
+              font-weight: 700;
+              margin: 0px;
+            }
+            .rating-number {
+              font-size: 45px;
+              font-weight: 600;
+              margin: 10px 0px;
+            }
+            .reviews-text {
+              color: #878791;
+              font-size: 16px;
+              font-weight: 600;
+            }
+          }
+          .content-side {
+            .content-review-txt {
+              font-size: 16px;
+              font-weight: 700;
+              margin: 0px;
+            }
+            .content-text {
+              font-size: 18px;
+              font-weight: 500;
+              color: #1d884a;
+              margin-top: 28px;
+              width: 90%;
+            }
+            .content-date {
+              display: flex;
+              align-items: center;
+              cursor: pointer;
+              font-size: 14px;
+              font-weight: 700;
+              color: #878791;
+              .video-icon-svg {
+                width: 17px;
+                height: 17px;
+                margin: 0px 7px;
+              }
+              .text-spn {
+                font-size: 13px;
+                font-weight: normal;
+                color: black;
+              }
+            }
+            .reviews-btn {
+              font-size: 14px;
+              font-weight: 600;
+              padding: 8px 6px;
+              color: #1d884a;
+              border: 1.5px solid #1d884a;
+              background-color: transparent;
+              margin-top: 25px;
+              &:hover {
+                background-color: #1d884a;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .booking-side-container {
+      width: 40%;
+      background-color: #e5e7eb;
+      padding: 30px 20px;
+      .booking-side-title {
+        font-size: 22px;
+        font-weight: bold;
+        margin: 0px;
+      }
+      .booking {
+        padding: 20px 0px;
+        .label {
+          font-weight: 600;
+        }
+        .option-select {
+          display: flex;
+          padding: 10px 0px;
+          .appointment-btns {
+            gap: 5px;
+            height: 40px;
+            border: 1px solid#e1e1e4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            background-color: white;
+            .option-selection {
+              width: 20px;
+              height: 20px;
+            }
+            .gender-title {
+              font-size: 17px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+      .appointment-time-section {
+        margin-top: 0px;
+        .calender-for-appointment {
+          width: 100%;
+          .calender-picker-title {
+          }
+        }
+      }
+      .date-submit-button {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        .date-submit-btn {
+          background-color: #1d884a;
+          padding: 10px;
+          border: none;
+          width: 100%;
+          font-size: 18px;
+          font-weight: 600;
+          color: white;
+        }
+      }
+    }
+  }
+  .second-main-container {
+    width: 95%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    padding: 60px 20px;
+    .second-main-heading {
+      display: flex;
+      width: 45%;
+      align-items: start;
+      flex-direction: column;
+      justify-content: flex-start;
+      .second-main-img {
+        width: 50px;
+        height: 50px;
+      }
+      .second-main-heading-text {
+        font-size: 18px;
+        font-weight: 700;
+        color: #1d884a;
+        margin: 0px;
+      }
+    }
+    .location-container {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: column;
+      .location-title {
+        color: #1d884a;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .location-content-container {
+        background-color: #b7eccd;
+        padding: 15px 20px;
+        color: white;
+        margin-bottom: 30px;
+        .location-text {
+          margin: 0px;
+        }
+      }
+    }
+  }
+  .third-main-container {
+    margin-top: 30px;
+    width: 97%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    .third-main-heading {
+      width: 100%;
+      .education-title {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+    .education-cards-section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 10px;
+      .education-card-1 {
+        padding: 30px;
+        min-height: 200px;
+        width: 290px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+        .card-title-1 {
+          font-size: 18px;
+          font-weight: 600;
+        }
+        .card-title-2 {
+          font-weight: 18px;
+          font-weight: 400;
+        }
+        .card-image {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 60px;
+        }
+      }
+    }
+    .training-card {
+      width: 100%;
+      height: 190px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 35px 0px;
+      .title-icon {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .training-title {
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+      .training-education {
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+    .nlp-language-cards {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      gap: 10px;
+      .language-spoken {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+        padding: 30px;
+        min-height: 200px;
+        width: 45%;
+        .language-card-contents {
+          .language-card-text {
+            font-size: 20px;
+            font-weight: 600;
+          }
+          .language-card-text1 {
+            font-size: 20px;
+            font-weight: 400;
+          }
+          .language-card-text2 {
+            font-size: 20px;
+            font-weight: 400;
+          }
+        }
+        .language-card-svg {
+          margin-top: 50px;
+          display: flex;
+          justify-content: flex-end;
+          align-items: end;
+        }
+        .language-card-svg2 {
+          display: flex;
+          justify-content: flex-end;
+          align-items: end;
+          margin-top: 90px;
+        }
+      }
+    }
+  }
+  .complete-reviews-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    width: 97%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+    height: 210px;
+    margin-bottom: 40px;
+    .review-container-1 {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      width: 40%;
+      .Patient-reviews {
+        display: flex;
+        align-items: center;
+
+        .Patient-reviews-title {
+          font-size: 22px;
+          font-weight: 700;
+        }
+        .review-section-buttons {
+          .review-sec-btn {
+            background-color: transparent;
+            border-radius: 50%;
+            width: 43px;
+            height: 43px;
+            border: none;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+            margin-left: 30px;
+          }
+        }
+      }
+      .review-card {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px;
+        width: 90%;
+        height: 50px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+        .review-card-img {
+          width: 55px;
+          height: 55px;
+        }
+        .Flory-Emakpose {
+          margin: 0px;
+          font-size: 16px;
+          font-weight: bold;
+        }
+        .date-reviews {
+          margin: 0px;
+        }
+      }
+    }
+    .review-container-2 {
+      width: 55%;
+      margin-left: 50px;
+      margin-top: 90px;
+      .review-container-2-text {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .review-video-svg {
+        width: 30px;
+        height: 30px;
+      }
+      .review-icon-text {
+        font-size: 17px;
+        margin: 0px;
+        font-weight: 600;
+      }
+    }
+  }
+  .frequent-questions {
+    width: 97%;
+    .frequent-question-heading {
+      display: flex;
+      justify-content: center;
+      width: 97%;
+      margin-bottom: 20px;
+      .frequent-question-heading-text {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+    .frequently-questions-container {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+      padding: 40px 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .booking-section {
+    .first-main-container {
+      width: 95%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      flex-direction: column;
+      .content-side-container {
+        width: 95%;
+        margin-bottom: 20px;
+      }
+
+      .booking-side-container {
+        width: 90%;
+        background-color: #e5e7eb;
+        padding: 30px 20px;
+        .booking-side-title {
+          font-size: 22px;
+          font-weight: bold;
+          margin: 0px;
+        }
+        .booking {
+          padding: 20px 0px;
+          .label {
+            font-weight: 600;
+          }
+          .option-select {
+            display: flex;
+            padding: 10px 0px;
+            .appointment-btns {
+              gap: 5px;
+              height: 40px;
+              border: 1px solid#e1e1e4;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 50%;
+              background-color: white;
+              .option-selection {
+                width: 20px;
+                height: 20px;
+              }
+              .gender-title {
+                font-size: 17px;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+        .appointment-time-section {
+          margin-top: 0px;
+          .calender-for-appointment {
+            width: 100%;
+            .calender-picker-title {
+            }
+          }
+        }
+        .date-submit-button {
+          margin-top: 10px;
+          display: flex;
+          justify-content: center;
+          .date-submit-btn {
+            background-color: #1d884a;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+          }
+        }
+      }
+    }
+    .second-main-container {
+      width: 85%;
+    }
+    .third-main-container {
+      margin-top: 30px;
+      width: 90%;
+    }
+    .complete-reviews-section {
+      width: 86%;
+    }
+    .frequent-questions {
+      width: 90%;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .booking-section {
+    width: 100%;
+    margin-top: 20px;
+    .first-main-container {
+      flex-direction: column;
+      .content-side-container {
+        width: 85%;
+      }
+
+      .booking-side-container {
+        width: 80%;
+      }
+    }
+    .second-main-container {
+      width: 85%;
+      height: 200px;
+      flex-direction: column;
+      .second-main-heading {
+        margin: 15px 0px;
+      }
+    }
+    .third-main-container {
+      margin-top: 30px;
+      width: 87%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 30px;
+      .third-main-heading {
+        width: 100%;
+        .education-title {
+          text-align: center;
+          font-size: 20px;
+          font-weight: 700;
+        }
+      }
+      .education-cards-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 10px;
+        .education-card-1 {
+          padding: 10px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          .card-title-1 {
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+          }
+          .card-title-2 {
+            font-weight: 16px;
+            font-weight: 400;
+          }
+          .card-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0px;
+          }
+        }
+      }
+      .training-card {
+        width: 100%;
+        height: 190px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 35px 0px;
+        .title-icon {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          .training-title {
+            font-size: 20px;
+            font-weight: 600;
+          }
+        }
+        .training-education {
+          font-size: 20px;
+          font-weight: 400;
+        }
+      }
+      .nlp-language-cards {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 10px;
+        .language-spoken {
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+          padding: 30px;
+          min-height: 200px;
+          width: 45%;
+          .language-card-contents {
+            .language-card-text {
+              font-size: 20px;
+              font-weight: 600;
+            }
+            .language-card-text1 {
+              font-size: 20px;
+              font-weight: 400;
+            }
+            .language-card-text2 {
+              font-size: 20px;
+              font-weight: 400;
+            }
+          }
+          .language-card-svg {
+            margin-top: 50px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: end;
+          }
+          .language-card-svg2 {
+            display: flex;
+            justify-content: flex-end;
+            align-items: end;
+            margin-top: 90px;
+          }
+        }
+      }
+    }
+    .complete-reviews-section {
+      width: 82%;
+      .review-container-1 {
+        .Patient-reviews {
+          justify-content: center;
+          flex-direction: column-reverse;
+          .Patient-reviews-title {
+            font-size: 22px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .frequent-questions {
+      width: 87%;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .booking-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    flex-direction: column;
+    width: 100%;
+    .first-main-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      flex-direction: column;
+      .content-side-container {
+        width: 100%;
+  
+        .dr-details {
+          .about-dr-details {
+            gap: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 40px;
+            .dr-profile {
+              display: flex;
+              width: 150px;
+  
+              .profile {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+              }
+            }
+  
+            .about-dr {
+              .name-title {
+                font-size: 32px;
+                font-weight: 700;
+                margin-top: 0px;
+                margin-bottom: 10px;
+                text-align: center;
+              }
+  
+              .type-title {
+                font-size: 16px;
+                font-weight: 600;
+                margin: 0px;
+                text-align: center;
+              }
+              .visit-price-buttons {
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 20px;
+              }
+              .bottom-line {
+                width: 90%;
+              }
+            }
+          }
+        }
+        .profile-second-container {
+          .profile-second {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            
+            .profile-second-recomended {
+              width: 390px;
+              padding: 10px;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              
+              .recomended-text {
+                font-size: 18px;
+                font-weight: 600;
+                margin: 0px;
+              }
+              .text-2 {
+                font-size: 14px;
+                color: #1d884a;
+                margin: 0px;
+              }
+            }
+          }
+          .profile-second-recomended {
+            width: 390px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 350px;
+          }
+        }
+        .rating-section {
+          margin-top: 80px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          .rating-main-container {
+            width: 93%;
+            display: flex;
+            .star-side {
+              width: 100%;
+              border-right: solid #878791 1px;
+              margin-right: 30px;
+            }
+          }
+        }
+      }
+  
+      .booking-side-container {
+        width: 90%;
+        background-color: #e5e7eb;
+        padding: 30px 20px;
+      }
+    }
+    .second-main-container {
+      width: 95%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+      display: flex;
+      height: 250px;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+    .third-main-container {
+      margin-top: 30px;
+      width: 97%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 30px;
+      .third-main-heading {
+        width: 100%;
+        .education-title {
+          text-align: center;
+          font-size: 20px;
+          font-weight: 700;
+        }
+      }
+      .education-cards-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 10px;
+      }
+      .nlp-language-cards {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 10px;
+        .language-spoken {
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+          padding: 30px;
+          min-height: 200px;
+          width: 83%;
+        }
+      }
+    }
+    .complete-reviews-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 50px 20px;
+      width: 85%;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+      height: 500px;
+      margin-bottom: 40px;
+      .review-container-1 {
+        width: 100%;
+      }
+      .review-container-2 {
+        width: 100%;
+        margin-left: 50px;
+        margin-top: 90px;
+      }
+    }
+    .frequent-questions {
+      width: 97%;
+      .frequent-question-heading {
+        display: flex;
+        justify-content: center;
+        width: 97%;
+        margin-bottom: 20px;
+        .frequent-question-heading-text {
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+      .frequently-questions-container {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+        padding: 40px 10px;
+      }
+    }
+  }
+  
+}

@@ -1,0 +1,34 @@
+.privacy-policy-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .privacy-policy-main-container{
+        width: 90%;
+        margin-top: 20px;
+        .privacy-policy-title{
+            font-size: 32px;
+            font-weight: 600;
+            text-align: center;
+
+        }
+        .privacy-policy-content{
+            .privacy-para-text{
+              text-align: justify;
+              font-weight: 500;
+              line-height: 20px;
+              .paragraph-span{
+                font-size: 16px;
+                font-weight: 700;
+                color: #1d884a;
+                cursor: pointer;
+                text-decoration: none;
+              }
+            }
+            .privacy-policy-title2{
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+        
+    }
+}

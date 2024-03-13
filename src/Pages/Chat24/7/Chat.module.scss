@@ -1,0 +1,91 @@
+.chat-section {
+  display: flex;
+  justify-content: center;
+  .chat-container {
+    width: 45%;
+    margin-left: 30px;
+    .chat-title {
+      color: rgba(29, 136, 74, 1);
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
+    .chat-heading {
+      border-bottom: 7.5px solid rgba(29, 136, 74, 1);
+      width: 220px;
+      margin-bottom: 20px;
+      .heading {
+        margin: 0;
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+    .para-text{
+        width: 100%;
+        font-size: 14px;
+        color: #727272;
+        text-align: justify;
+        line-height: 21px;
+      }
+    .text{
+        font-weight: 600;
+        text-align: justify;
+    }
+    .terms-of-use {
+        display: flex;
+        justify-content: center;
+        height: 40px;
+        gap: 10px;
+        color: #727272;
+        text-align: justify;
+        line-height: 21px;
+        margin-bottom: 50px;
+        .agree-btn {
+          border-color: 1px solid rgba(29, 136, 74, 1);
+          color: rgba(29, 136, 74, 1);
+          accent-color: rgba(29, 136, 74, 1);
+          background-color: #1d884a;
+          width: 40px;
+          height: 40px;
+          &:focus {
+            color: rgba(29, 136, 74, 1);
+            background-color: #1d884a;
+          }
+        }
+        .acceptance-text {
+          font-size: 14px;
+          .acceptance-spn {
+            color: rgba(29, 136, 74, 1);
+            text-decoration: none;
+            font-weight: bold;
+          }
+        }
+      }
+      .btn-container{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+        .booking-button{
+            background-color: #1d884a;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 10px;
+            font-size: 16px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            margin-top: 100px;
+        }
+      }
+  }
+  .chat-image {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .image-chat{
+        width: 250px;
+        height: 150px;
+    }
+  }
+}
