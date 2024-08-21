@@ -15,7 +15,7 @@ import { createProfessional } from "../../Features/createProfessionalSlice/creat
 // import { toast } from "react-toastify";
 
 function Form() {
-  const initialState={
+  const initialState = {
     name: "",
     email: "",
     password: "",
@@ -31,7 +31,7 @@ function Form() {
     practiceName: "",
     affiliatins: "",
     userType: "doctor",
-  }
+  };
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [isProfessional, setIsProfessional] = useState(false);
@@ -64,14 +64,14 @@ function Form() {
       setFormTitle("Telemedicine Healthcare Professional Form");
       setFormData({
         ...formData,
-        userType: "professional"
+        userType: "professional",
       });
     } else if (!isProfessional && formData.userType !== "doctor") {
       setIsProfessional(false);
       setFormTitle("Doctor's Form");
       setFormData({
         ...formData,
-        userType: "doctor"
+        userType: "doctor",
       });
     }
   };
@@ -83,17 +83,15 @@ function Form() {
       [name]: value,
     });
   };
-  
-  console.log(formData,"form data in console")
+
+  console.log(formData, "form data in console");
   const handleSubmit = (e) => {
-
     e.preventDefault();
-   
-    if (formData.userType === "professional") {
 
+    if (formData.userType === "professional") {
       let errors = {};
       let hasErrors = false;
-      
+
       if (formData.name?.trim() === "") {
         errors.name = "Enter your name";
         hasErrors = true;
@@ -142,7 +140,7 @@ function Form() {
         errors.affiliatins = "Hospital Affiliation should not be empty";
         hasErrors = true;
       }
-  
+
       if (hasErrors) {
         setFormErrors(errors);
       } else {
@@ -167,10 +165,10 @@ function Form() {
         navigate("/signup");
       }
       // if (Object.values(professionalFormData).every(field => field.trim() !== '')) {
-      
-    // }else {
-    //   toast.error('Please fill in all fields');
-    // }
+
+      // }else {
+      //   toast.error('Please fill in all fields');
+      // }
       setFormData({
         ...formData,
         name: "",
@@ -187,12 +185,9 @@ function Form() {
         affiliatins: "",
       });
     } else {
-      
-
-
       let errors = {};
       let hasErrors = false;
-      
+
       if (formData.name?.trim() === "") {
         errors.name = "Enter your name";
         hasErrors = true;
@@ -249,7 +244,7 @@ function Form() {
         errors.affiliatins = "Hospital Affiliation should not be empty";
         hasErrors = true;
       }
-  
+
       if (hasErrors) {
         setFormErrors(errors);
       } else {
@@ -276,10 +271,10 @@ function Form() {
         navigate("/signup");
       }
 
-    //   if (Object.values(doctorFormData).every(field => field.trim() !== '')) {
-    // }else{
-    //   toast.error("please fill in all fields")
-    // }
+      //   if (Object.values(doctorFormData).every(field => field.trim() !== '')) {
+      // }else{
+      //   toast.error("please fill in all fields")
+      // }
       setFormData({
         ...formData,
         name: "",
@@ -296,11 +291,9 @@ function Form() {
         educationAndTraining: "",
         practiceName: "",
         affiliatins: "",
-        userType:"",
+        userType: "",
       });
     }
-  
-  
   };
   const options = [
     { value: "Kaduna", label: "Kaduna" },
@@ -363,7 +356,7 @@ function Form() {
               value={formData.name}
               onChange={handleInputChange}
             />
-             {renderError("name")}
+            {renderError("name")}
             <TextField
               id="outlined-basic"
               label="Email"
@@ -373,7 +366,7 @@ function Form() {
               value={formData.email}
               onChange={handleInputChange}
             />
-             {renderError("email")}
+            {renderError("email")}
             <TextField
               id="outlined-password-input"
               label="Password"
@@ -383,21 +376,26 @@ function Form() {
               value={formData.password}
               onChange={handleInputChange}
             />
-             {renderError("password")}
+            {renderError("password")}
             <TextField
               id="outlined-password-input"
               label="Confirm Password"
               type="password"
               className={styles["dr-form-input-fields"]}
-              name="confirmPassword" 
-              value={formData.confirmPassword} 
+              name="confirmPassword"
+              value={formData.confirmPassword}
               onChange={handleInputChange}
             />
-             {renderError("confirmPassword")}
+            {renderError("confirmPassword")}
             {!isProfessional && (
               <Box sx={{ display: "flex", minWidth: 120 }}>
                 <FormControl fullWidth>
-                  <InputLabel id="demo-simple-select-label">Region</InputLabel>
+                  <InputLabel
+                    id="demo-simple-select-label"
+                    sx={{ paddingTop: "10px" }}
+                  >
+                    Region
+                  </InputLabel>
                   <Select
                     labelId="demo-simple-select-label"
                     id="demo-simple-select-region"
@@ -422,9 +420,14 @@ function Form() {
                   </Select>
                   {renderError("region")}
                 </FormControl>
-               
+
                 <FormControl fullWidth>
-                  <InputLabel id="demo-simple-select-label">City</InputLabel>
+                  <InputLabel
+                    id="demo-simple-select-label"
+                    sx={{ paddingTop: "10px" }}
+                  >
+                    City
+                  </InputLabel>
                   <Select
                     labelId="demo-simple-select-label"
                     id="demo-simple-select-city"
@@ -441,7 +444,6 @@ function Form() {
                       },
                     }}
                   >
-                    
                     {options.map((option) => (
                       <MenuItem key={option.value} value={option.value}>
                         {option.label}
@@ -453,7 +455,12 @@ function Form() {
               </Box>
             )}
             <FormControl fullWidth>
-              <InputLabel id="demo-simple-select-label">Language</InputLabel>
+              <InputLabel
+                id="demo-simple-select-label"
+                sx={{ paddingTop: "12px" }}
+              >
+                Language
+              </InputLabel>
               <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
@@ -487,7 +494,7 @@ function Form() {
               value={formData.phone}
               onChange={handleInputChange}
             />
-             {renderError("phone")}
+            {renderError("phone")}
             <Textarea
               placeholder="About yourself"
               variant="outlined"
@@ -496,13 +503,18 @@ function Form() {
               value={formData.description}
               onChange={handleInputChange}
             />
-             {renderError("description")}
+            {renderError("description")}
             <p className={styles["education-title"]}>
               Education and Background
             </p>
             <p className={styles["label-heading"]}>Specialty & experience</p>
             <FormControl fullWidth>
-              <InputLabel id="demo-simple-select-label">Speciality</InputLabel>
+              <InputLabel
+                id="demo-simple-select-label"
+                sx={{ paddingTop: "10px" }}
+              >
+                Speciality
+              </InputLabel>
               <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
@@ -540,7 +552,7 @@ function Form() {
               value={formData.experience}
               onChange={handleInputChange}
             />
-              {renderError("experience")}
+            {renderError("experience")}
             <p className={styles["label-heading"]}>Education & Training</p>
             <TextField
               id="outlined-basic"
@@ -551,7 +563,7 @@ function Form() {
               value={formData.educationAndTraining}
               onChange={handleInputChange}
             />
-              {renderError("educationAndTraining")}
+            {renderError("educationAndTraining")}
             <p className={styles["label-heading"]}>Practice Names</p>
             <TextField
               id="outlined-basic"
@@ -562,7 +574,7 @@ function Form() {
               value={formData.practiceName}
               onChange={handleInputChange}
             />
-              {renderError("practiceName")}
+            {renderError("practiceName")}
             <p className={styles["label-heading"]}>Hospital Affiliations</p>
             <TextField
               id="outlined-basic"
@@ -573,7 +585,7 @@ function Form() {
               value={formData.affiliatins}
               onChange={handleInputChange}
             />
-              {renderError("affiliatins")}
+            {renderError("affiliatins")}
             <button type="submit" className={styles["submit-btn"]}>
               Submit
             </button>

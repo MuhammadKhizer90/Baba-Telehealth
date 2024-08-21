@@ -19,21 +19,11 @@ import TermsAndUse from "./Pages/Terms of Use/TermsOfUse";
 import MenHealth from "./Pages/Men Health/MenHealth";
 import WomenHealth from "./Pages/Women Health/WomenHealth";
 import STIs from "./Pages/STIs/STIs";
+import ProtectedRoute from './protected routes/ProtectedRoutes';
 import { useSelector } from "react-redux";
 function App() {
-  const isAuthenticated = useSelector(state => state.login.token !== null);
-  console.log(isAuthenticated,"isAuthenticated in routes")
-  // const isAuthenticated = useSelector(state => state.login.token !== null);
-
-  // const ProtectedRoute = ({ path, element }) => {
-  //   return isAuthenticated ? (
-  //     <Route path={path} element={element} />
-  //   ) : (
-  //     <Navigate to="/login" replace />
-  //   );
-  // };
   return (
-    <div>
+    <div className="outletcenter">
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -49,13 +39,10 @@ function App() {
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         <Route path="/termsanduse" element={<TermsAndUse />} />
 
-        {isAuthenticated && (
-          <>
-        <Route path='/menhealth' element={<MenHealth />} />
-        <Route path='/womenhealth' element={<WomenHealth />} />
-        <Route path='/stis' element={<STIs />} />
-        </>
-        )}
+        <Route path='/menhealth' element={<ProtectedRoute element={<MenHealth />} restrictedRoutes={['/menhealth', '/womenhealth', '/stis']} />} />
+        <Route path='/womenhealth' element={<ProtectedRoute element={<WomenHealth />} restrictedRoutes={['/menhealth', '/womenhealth', '/stis']} />} />
+        <Route path='/stis' element={<ProtectedRoute element={<STIs />} restrictedRoutes={['/menhealth', '/womenhealth', '/stis']} />} />
+        
         <Route path="*" element={<Page />} />
       </Routes>
       <Footer />

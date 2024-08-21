@@ -1,3 +1,12 @@
 *{
     font-family: "Raleway", sans-serif;
 }
+.outletcenter {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content horizontally */
+    justify-content: center; /* Centers the content vertically */
+    margin: 0 auto; /* Centers the container horizontally within its parent */
+    height: 100%; /* Ensures the container takes the full height of the viewport */
+  }

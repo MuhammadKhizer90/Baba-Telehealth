@@ -7,6 +7,7 @@ import HowWork from '../../Components/How it works/HowWork';
 import StarDoctor from '../../Components/Star Doctors/StarDoctor';
 import SingleSlider from "../../Components/feedback Slider/feedbackSlider"
 import { useRef } from 'react';
+import "./Home.scss";
 function Home() {
 
   const urgentRef = useRef(null);
@@ -18,7 +19,7 @@ function Home() {
 
 
   return (
-    <div>
+    <div className="outlet">
         <HeroSection scrollToUrgent={scrollToUrgent}/>
         <Appointment/>
         <div ref={urgentRef}>

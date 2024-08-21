@@ -1,27 +1,37 @@
 import styles from "./Search.module.scss";
-import {useEffect,} from "react";
+import {useEffect, useState,} from "react";
 import SearchSvg from "../../assets/search.svg";
 import MarkerSvg from "../../assets/marker.svg";
 import DoctorCard from "../../Components/Doctor Cards/DoctorCards";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchUser } from "../../Features/getUserSlice/getUserSlice";
+import axios from "axios";
 
 function SearchPage() {
-  
+  const [userData, setUserData] = useState(null);
+
   const dispatch = useDispatch();
-  const { data, isLoading, isError } = useSelector((state) => state.user);
-
-  useEffect(() => {
-    dispatch(fetchUser());
-  }, [dispatch]);
-
-  if (isLoading) {
-    return <div>Loading...</div>;
+  // const { data, isLoading, isError } = useSelector((state) => state.user);
+  // const { data, isLoading, isError } = 
+  const fetchData = async () => {
+   const response = await axios.get("../../../db.json");
+   setUserData(response.data);
+   console.log(response.data, "fetched data");
   }
 
-  if (isError) {
-    return <div>Error fetching data</div>;
-  }
+  // useEffect(() => {
+  //   dispatch(fetchUser());
+  // }, [dispatch]);
+useEffect(() => {
+    fetchData();
+}, []);
+  // if (isLoading) {
+  //   return <div>Loading...</div>;
+  // }
+
+  // if (isError) {
+  //   return <div>Error fetching data</div>;
+  // }
 
 
   return (
@@ -58,7 +68,7 @@ function SearchPage() {
         </div>
       </div>
       </div>
-      {data && data.map((items) => (
+      {userData && userData.map((items) => (
       <DoctorCard
         key={items.id}
         id={items.id}
